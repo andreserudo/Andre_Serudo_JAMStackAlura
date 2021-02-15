@@ -3,6 +3,7 @@ import Capa from '../src/components/commons/Capa';
 import Cabecalho from '../src/components/commons/Cabecalho';
 import WrapperProjetos from '../src/components/commons/Projetos';
 import Rodape from '../src/components/commons/Rodape';
+import Apresentacao from '../src/components/commons/Apresentacao';
 
 export default function Home() {
   return (
@@ -10,13 +11,12 @@ export default function Home() {
       style={{
         flex: '1',
         display: 'flex',
-        flexWrap: 'wrap',
         flexDirection: 'column',
-        justifyContent: 'space-between',
       }}
     >
       <Capa />
       <Cabecalho />
+      <Apresentacao />
       <WrapperProjetos />
       <Rodape />
     </div>

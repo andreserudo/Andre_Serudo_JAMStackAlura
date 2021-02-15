@@ -1,8 +1,16 @@
 import React from 'react';
 
+import { CabecalhoWrapper, Logo, Navbar } from './styles';
+
 function Cabecalho() {
   return (
-    <h1>Cabecalho</h1>
+    <CabecalhoWrapper>
+      <Navbar>
+        <p>Projetos</p>
+        <p>Sobre mim</p>
+      </Navbar>
+      <Logo />
+    </CabecalhoWrapper>
   );
 }
 

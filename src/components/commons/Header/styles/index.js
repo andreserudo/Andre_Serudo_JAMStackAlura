@@ -5,6 +5,7 @@ const HeaderWrapper = styled.div`
   height: 45%;
   display: flex;
   flex-direction: column;
+  margin: 0;
 `;
 
 HeaderWrapper.TopImage = styled.div`
