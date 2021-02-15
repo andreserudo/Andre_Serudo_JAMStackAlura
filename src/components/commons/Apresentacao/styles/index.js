@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 
 const ApresentacaoWrapper = styled.div`  
   
@@ -9,6 +10,10 @@ const ApresentacaoWrapper = styled.div`
   margin-top: 56px;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
+  ${breakpointsMedia({
+    xl: css``,
+  })}
 `;
 
 ApresentacaoWrapper.Nome = styled.h2`

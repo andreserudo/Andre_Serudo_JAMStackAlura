@@ -15,8 +15,17 @@ export const colors = {
   },
 };
 
+export const breakpoints = {
+  xs: 0,
+  sm: 375,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+};
+
 export default {
   colors,
+  breakpoints,
   typographyVariants,
   fontFamily: '\'Fire Sans Condensed\', sans-serif',
 };
