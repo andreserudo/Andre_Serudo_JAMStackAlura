@@ -1,4 +1,5 @@
 import React from 'react';
+
 import HeaderWrapper from './styles';
 
 function Header() {
@@ -9,6 +10,9 @@ function Header() {
         <p>Projects</p>
         <p>About Me</p>
       </HeaderWrapper.Menu>
+      <HeaderWrapper.ProfileWrapper>
+        <HeaderWrapper.Profile />
+      </HeaderWrapper.ProfileWrapper>
     </HeaderWrapper>
   );
 }
