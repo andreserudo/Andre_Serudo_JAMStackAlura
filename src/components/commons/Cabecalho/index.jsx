@@ -6,8 +6,10 @@ function Cabecalho() {
   return (
     <CabecalhoWrapper>
       <Navbar>
-        <p>Projetos</p>
-        <p>Sobre mim</p>
+        <ul>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+        </ul>
       </Navbar>
       <Logo />
     </CabecalhoWrapper>

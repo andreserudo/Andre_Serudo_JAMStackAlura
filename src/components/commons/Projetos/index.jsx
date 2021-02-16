@@ -6,7 +6,7 @@ import Card from '../Card';
 function WrapperProjetos() {
   return (
     <Wrapper>
-      <SectionTitle>Projetos</SectionTitle>
+      <SectionTitle id="Projects">Projects</SectionTitle>
       <ProjetosWrapper>
         {
           projects.map((project) => (

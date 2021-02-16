@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-bottom: 6rem;
 `;
 
 const SectionTitle = styled.h1`

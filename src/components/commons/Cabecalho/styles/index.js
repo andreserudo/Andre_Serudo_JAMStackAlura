@@ -1,16 +1,46 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 
 const CabecalhoWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.primary.backgroundColor};   
 `;
 
-const Navbar = styled.div`
+const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 100%;
   width: 100%;
   padding-left: 1.5rem;
   padding-right: .5rem;
+
+  ul {
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-evenly;
+    ${breakpointsMedia({
+    sm: css`justify-content: space-between;`,
+    md: css`justify-content: space-around;`,
+  })}
+
+  }
+
+  li {
+    list-style: none;    
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  a {    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight:bold;    
+    color: ${({ theme }) => theme.colors.primary.colorTitle};    
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.colors.primary.colorTitleHover};    
+  }
+  
 `;
 
 const Logo = styled.div`  
@@ -22,6 +52,12 @@ const Logo = styled.div`
   margin-left: -86px;
   border-radius: 50%;
   background-color: #E9C46A;
+  display: none;
+
+  ${breakpointsMedia({
+    sm: css`display:inherit;`,
+  })}
+
 `;
 
 export { CabecalhoWrapper, Logo, Navbar };
