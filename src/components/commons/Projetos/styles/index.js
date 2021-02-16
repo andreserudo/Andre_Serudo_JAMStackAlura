@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import propToStyle from '../../../../themes/utils/propToStyle';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -12,31 +11,10 @@ const Wrapper = styled.div`
 `;
 
 const SectionTitle = styled.h1`
-  
+  margin-bottom: 2rem;
+  color: ${({ theme }) => theme.colors.secondary.color}  
 `;
 
 const ProjetosWrapper = styled.div``;
-
-ProjetosWrapper.Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: flex-start;
-`;
-
-ProjetosWrapper.CardImage = styled.img`
-  width: 100%;
-  ${propToStyle('src')}
-  ${propToStyle('alt')}
-  
-`;
-
-ProjetosWrapper.CardTextsWrapper = styled.div``;
-
-ProjetosWrapper.CardTitle = styled.div``;
-
-ProjetosWrapper.CardDescription = styled.div``;
-
-ProjetosWrapper.CardLink = styled.a``;
 
 export { Wrapper, SectionTitle, ProjetosWrapper };

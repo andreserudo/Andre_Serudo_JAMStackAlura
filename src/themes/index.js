@@ -11,7 +11,8 @@ export const colors = {
     color: '#000000',
   },
   secondary: {
-    color: '#E9C46A',
+    backgroundColor: '#E9C46A',
+    backgroundColorHover: 'rgba(233,196,106,0.3)',
   },
 };
 

@@ -8,8 +8,8 @@ const ApresentacaoWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 56px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 
   ${breakpointsMedia({
     xl: css``,
