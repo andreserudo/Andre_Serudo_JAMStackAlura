@@ -9,6 +9,7 @@ export const colors = {
   primary: {
     backgroundColor: '#FFF8E6',
     color: '#000000',
+    colorTitle: 'rgba(0,0,0,0.6)',
   },
   secondary: {
     backgroundColor: '#E9C46A',

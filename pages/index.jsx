@@ -2,7 +2,7 @@ import React from 'react';
 import Capa from '../src/components/commons/Capa';
 import Cabecalho from '../src/components/commons/Cabecalho';
 import WrapperProjetos from '../src/components/commons/Projetos';
-import Rodape from '../src/components/commons/Rodape';
+import Footer from '../src/components/commons/Footer';
 import Apresentacao from '../src/components/commons/Apresentacao';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Cabecalho />
       <Apresentacao />
       <WrapperProjetos />
-      <Rodape />
+      <Footer />
     </div>
   );
 }

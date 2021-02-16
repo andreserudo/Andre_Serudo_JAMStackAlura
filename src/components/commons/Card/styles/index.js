@@ -38,7 +38,7 @@ CardWrapper.CardTextsWrapper = styled.div`
 CardWrapper.CardTitle = styled.div`
   font-size: 20px;
   padding: 1rem 0rem 1rem .6rem;
-  color: ${({ theme }) => theme.colors.primary.color}
+  color: ${({ theme }) => theme.colors.primary.colorTitle}
 `;
 
 CardWrapper.CardDescription = styled.div`

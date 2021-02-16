@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 
 const SectionTitle = styled.h1`
   margin-bottom: 2rem;
-  color: ${({ theme }) => theme.colors.secondary.color}  
+  color: ${({ theme }) => theme.colors.primary.colorTitle}  
 `;
 
 const ProjetosWrapper = styled.div``;
