@@ -1,21 +1,69 @@
 export const typographyVariants = {
   // [title]
   title: {
-    fontSize: '32px',
+    fontSize: '20px',
     fontWeight: '700',
     lineHeight: 1.25, // 125%
   },
   titleXS: {
-    fontSize: '24px',
+    fontSize: '28px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  titleSM: {
+    fontSize: '32px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  titleMD: {
+    fontSize: '32px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  titleLG: {
+    fontSize: '32px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  titleXL: {
+    fontSize: '32px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+
+  // [subTitle]
+  subTitle: {
+    fontSize: '14px',
     fontWeight: '500',
     lineHeight: 1.25, // 125%
   },
   // [subTitle]
-  subTitle: {
+  subTitleXS: {
+    fontSize: '16px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  subTitleSM: {
+    fontSize: '18px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  subTitleMD: {
+    fontSize: '20px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  subTitleLG: {
+    fontSize: '22px',
+    fontWeight: '500',
+    lineHeight: 1.25, // 125%
+  },
+  subTitleXL: {
     fontSize: '24px',
     fontWeight: '500',
     lineHeight: 1.25, // 125%
   },
+
   // [paragraph1]
   paragraph1: {
     fontSize: '16px',

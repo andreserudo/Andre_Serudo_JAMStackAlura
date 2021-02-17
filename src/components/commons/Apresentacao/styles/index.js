@@ -70,7 +70,8 @@ ApresentacaoWrapper.Profissao = styled.h3`
   line-height: 17px;
   letter-spacing: 0.15em;
   padding-top: 2rem;
-
+  text-align: center;
+  
   ${breakpointsMedia({
     sm: css`
       font-size: 14px;    

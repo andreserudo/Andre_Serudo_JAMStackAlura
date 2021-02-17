@@ -4,7 +4,7 @@ import propToStyle from '../../../../themes/utils/propToStyle';
 
 const CardWrapper = styled.div`
   // width: 333px;
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -15,13 +15,16 @@ const CardWrapper = styled.div`
 
   ${breakpointsMedia({
     xs: css`width: 90%;`,
+    md: css`width: 40%;`,
+    xl: css`width: 30%;`,
   })}
 
   &:first-of-type {
     margin-bottom: 1rem;
     ${breakpointsMedia({
     md: css`      
-      `,
+      margin-right: 1rem;
+    `,
   })}
 
   }
@@ -47,8 +50,8 @@ CardWrapper.CardImage = styled.img`
 
   ${breakpointsMedia({
     md: css`
-      height: 228px;
-      width: 333px;`,
+      /* height: 228px;
+      width: 333px;*/`,
   })}
 
   ${propToStyle('src')};
@@ -60,9 +63,28 @@ CardWrapper.CardTextsWrapper = styled.div`
 `;
 
 CardWrapper.CardTitle = styled.div`
-  font-size: 20px;
+  // font-size: 20px;
   padding: 1rem 0rem 1rem .6rem;
   color: ${({ theme }) => theme.colors.primary.colorTitle};
+  font-size: ${({ theme }) => theme.typographyVariants.subTitle.fontSize};
+  ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.subTitleXS.fontSize};    
+    `,
+    sm: css`
+      font-size: ${({ theme }) => theme.typographyVariants.subTitleSM.fontSize};    
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.subTitleMD.fontSize};    
+    `,
+    lg: css`
+      font-size: ${({ theme }) => theme.typographyVariants.subTitleLG.fontSize};    
+    `,
+    xl: css`
+      font-size: ${({ theme }) => theme.typographyVariants.subTitleXL.fontSize};    
+    `,
+  })};        
+
 `;
 
 CardWrapper.CardDescription = styled.div`

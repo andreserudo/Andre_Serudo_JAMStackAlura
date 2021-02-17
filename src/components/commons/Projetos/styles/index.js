@@ -38,6 +38,25 @@ Wrapper.Container = styled.div`
 const SectionTitle = styled.h1`
   margin-bottom: 2rem;
   color: ${({ theme }) => theme.colors.primary.colorTitle};
+  font-size: ${({ theme }) => theme.typographyVariants.title.fontSize};
+  ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.titleXS.fontSize};    
+    `,
+    sm: css`
+      font-size: ${({ theme }) => theme.typographyVariants.titleSM.fontSize};    
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.titleMD.fontSize};    
+    `,
+    lg: css`
+      font-size: ${({ theme }) => theme.typographyVariants.titleLG.fontSize};    
+      margin-bottom: 4rem;
+    `,
+    xl: css`
+      font-size: ${({ theme }) => theme.typographyVariants.titleXL.fontSize};    
+    `,
+  })};        
 `;
 
 const ProjetosWrapper = styled.div`
@@ -47,9 +66,10 @@ const ProjetosWrapper = styled.div`
   ${breakpointsMedia({
     md: css`
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center; 
+        flex-wrap: wrap;
       `,
   })}
 

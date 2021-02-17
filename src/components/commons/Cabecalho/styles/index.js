@@ -58,7 +58,8 @@ const Logo = styled.div`
   left: 50%;
   margin-left: -86px;
   border-radius: 50%;
-  background-color: #E9C46A;
+  background-image: url('/images/profile.png');  
+  background-size: cover;
   display: none;
 
   ${breakpointsMedia({
