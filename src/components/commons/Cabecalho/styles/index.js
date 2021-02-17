@@ -10,17 +10,24 @@ const Navbar = styled.nav`
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  padding-left: 1.5rem;
-  padding-right: .5rem;
 
   ul {
     width: 100%;
-    display: flex;
-    
+    display: flex;    
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     ${breakpointsMedia({
-    sm: css`justify-content: space-between;`,
-    md: css`justify-content: space-around;`,
+    sm: css`
+      justify-content: space-between;
+      padding-left: 1.5rem;
+      padding-right: .5rem;
+    `,
+    md: css`
+      justify-content: space-around;
+      padding-left: unset;
+      padding-right: unset;
+    `,
   })}
 
   }
@@ -55,7 +62,9 @@ const Logo = styled.div`
   display: none;
 
   ${breakpointsMedia({
-    sm: css`display:inherit;`,
+    sm: css`
+      display:inherit;
+    `,
   })}
 
 `;

@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 import propToStyle from '../../../../themes/utils/propToStyle';
 
 const CardWrapper = styled.div`
+  // width: 333px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -10,13 +13,27 @@ const CardWrapper = styled.div`
   border-bottom-right-radius: 8px;
   background-color: ${({ theme }) => theme.colors.primary.backgroundColor};
 
+  ${breakpointsMedia({
+    xs: css`width: 90%;`,
+  })}
+
   &:first-of-type {
     margin-bottom: 1rem;
+    ${breakpointsMedia({
+    md: css`      
+      `,
+  })}
+
   }
 
   & + & {
     margin-bottom: 1rem;
-  }
+    ${breakpointsMedia({
+    md: css`
+      margin-bottom: unset;`,
+  })}
+
+  }  
 
   &:hover{
     box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
@@ -27,8 +44,15 @@ const CardWrapper = styled.div`
 
 CardWrapper.CardImage = styled.img`
   width: 100%;
-  ${propToStyle('src')}
-  ${propToStyle('alt')}
+
+  ${breakpointsMedia({
+    md: css`
+      height: 228px;
+      width: 333px;`,
+  })}
+
+  ${propToStyle('src')};
+  ${propToStyle('alt')};
   
 `;
 
@@ -38,7 +62,7 @@ CardWrapper.CardTextsWrapper = styled.div`
 CardWrapper.CardTitle = styled.div`
   font-size: 20px;
   padding: 1rem 0rem 1rem .6rem;
-  color: ${({ theme }) => theme.colors.primary.colorTitle}
+  color: ${({ theme }) => theme.colors.primary.colorTitle};
 `;
 
 CardWrapper.CardDescription = styled.div`
@@ -57,7 +81,7 @@ CardWrapper.CardLink = styled.a`
   margin-bottom: 1rem;
 
   &:hover {    
-    background-color: ${({ theme }) => theme.colors.secondary.backgroundColorHover}
+    background-color: ${({ theme }) => theme.colors.secondary.backgroundColorHover};
   }
 `;
 
