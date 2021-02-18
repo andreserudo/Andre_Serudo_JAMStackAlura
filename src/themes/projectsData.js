@@ -16,8 +16,8 @@ const projects = [
 
 ];
 
-const bio = `Meu nome é André Serudo. Sou um engenheiro de software brasileiro, atualmente morando em Manaus. 
-Tenho 4 anos em desenvolvimento de software para web e desktop. Interessado em cultura ágil, sou um Certified Scrum Master e participei do Management 3.0 Foundation Workshop.`;
+const bio = `My name is André Serudo. I'm a Brazilian software engineer, currently living in Manaus. I have 4 years in
+software development for web and desktop. Interested in Agile Culture, I'm a Certified Scrum Master and I've made the Management 3.0 Foundation Workshop.`;
 
 const values = ['Learning', 'Inclusivity', 'Joy'];
 
