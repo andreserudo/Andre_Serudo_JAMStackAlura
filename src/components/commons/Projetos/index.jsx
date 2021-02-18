@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper, SectionTitle, ProjetosWrapper } from './styles';
-import projects from '../../../themes/projectsData';
+import { projects } from '../../../themes/projectsData';
 import Card from '../Card';
 
 function WrapperProjetos() {

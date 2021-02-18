@@ -16,4 +16,13 @@ const projects = [
 
 ];
 
-export default projects;
+const bio = `My name is André Serudo. I'm a brazilian software engineer, currently living in Manaus. I have 4 years in
+software development for web and desktop. Also interessed in Agile Culture beeing a Certified Scrum Master and had done the Management 3.0 Foundation.`;
+
+const values = ['Learning', 'Inclusivity', 'Joy'];
+
+const tools = ['Javascript', 'Sass', 'Reactjs'];
+
+export {
+  projects, bio, values, tools,
+};
