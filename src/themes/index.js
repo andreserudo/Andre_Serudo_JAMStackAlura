@@ -1,4 +1,22 @@
-import { typographyVariants } from './typographyVariants';
+export const colorPallet = [
+  {
+    theme: 'light',
+    mainBackgroundColor: '#FFFFFF',
+    sectionBackgroundColor: '#FBF0DB',
+    navBackgroundColor: '#FFF8E6',
+    titleColor: '#312F2F',
+    paragraphyColor: '#312F2F',
+    linkHoverColor: 'rgba(49, 47, 47,0.6)',
+  },
+  {
+    theme: 'dark',
+    mainBackgroundColor: '#010409',
+    sectionBackgroundColor: '#120D02',
+    navBackgroundColor: '#362707',
+    titleColor: '#EBEAEA',
+    paragraphyColor: '#EBEAEA',
+  },
+];
 
 export const colors = {
   background: {
@@ -29,6 +47,6 @@ export const breakpoints = {
 export default {
   colors,
   breakpoints,
-  typographyVariants,
   fontFamily: '\'Fire Sans Condensed\', sans-serif',
+  colorPallet,
 };

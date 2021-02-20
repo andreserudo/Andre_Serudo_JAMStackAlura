@@ -11,7 +11,7 @@ const CardWrapper = styled.div`
   justify-content: flex-start;  
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background-color: ${({ theme }) => theme.colors.primary.backgroundColor};
+  background-color: ${({ theme }) => theme.mainBackgroundColor};   
 
   ${breakpointsMedia({
     xs: css`width: 90%;`,
@@ -65,37 +65,37 @@ CardWrapper.CardTextsWrapper = styled.div`
 CardWrapper.CardTitle = styled.div`
   // font-size: 20px;
   padding: 1rem 0rem 1rem .6rem;
-  color: ${({ theme }) => theme.colors.primary.colorTitle};
-  font-size: ${({ theme }) => theme.typographyVariants.subTitle.fontSize};
+  color: ${({ theme }) => theme.titleColor};   
+  font-size: ${({ theme }) => theme.subTitle.fontSize};
   ${breakpointsMedia({
     xs: css`
-      font-size: ${({ theme }) => theme.typographyVariants.subTitleXS.fontSize};    
+      font-size: ${({ theme }) => theme.subTitleXS.fontSize};    
     `,
     sm: css`
-      font-size: ${({ theme }) => theme.typographyVariants.subTitleSM.fontSize};    
+      font-size: ${({ theme }) => theme.subTitleSM.fontSize};    
     `,
     md: css`
-      font-size: ${({ theme }) => theme.typographyVariants.subTitleMD.fontSize};    
+      font-size: ${({ theme }) => theme.subTitleMD.fontSize};    
     `,
     lg: css`
-      font-size: ${({ theme }) => theme.typographyVariants.subTitleLG.fontSize};    
+      font-size: ${({ theme }) => theme.subTitleLG.fontSize};    
     `,
     xl: css`
-      font-size: ${({ theme }) => theme.typographyVariants.subTitleXL.fontSize};    
+      font-size: ${({ theme }) => theme.subTitleXL.fontSize};    
     `,
-  })};        
+  })};
 
 `;
 
 CardWrapper.CardDescription = styled.div`
   font-size: 14px;  
   padding: 0rem .25rem 1rem .6rem;
-  color: ${({ theme }) => theme.colors.secondary.backgroundColor};
+  color: ${({ theme }) => theme.paragraphyColor};   
 `;
 
 CardWrapper.CardLink = styled.a`
   color: white;
-  background-color: ${({ theme }) => theme.colors.secondary.backgroundColor};
+  background-color: ${({ theme }) => theme.paragraphyColor};   
   border-radius: 4px;
   font-weight: bold;
   text-decoration: none;
@@ -103,7 +103,7 @@ CardWrapper.CardLink = styled.a`
   margin-bottom: 1rem;
 
   &:hover {    
-    background-color: ${({ theme }) => theme.colors.secondary.backgroundColorHover};
+    background-color: ${({ theme }) => theme.linkHoverColor};   
   }
 `;
 

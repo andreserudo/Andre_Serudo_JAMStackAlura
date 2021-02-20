@@ -1,23 +1,29 @@
 import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 6rem;
+  align-items: flex-start;  
+  background-color: ${({ theme }) => theme.sectionBackgroundColor};
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   ${breakpointsMedia({
     xs: css`
-     padding-left: 3rem;
-     padding-right: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    `,
+    sm: css`
     `,
     md: css`
       align-items: center;
       padding-left: unset;
       padding-right: unset;      
+      padding-top: 7rem;
+      padding-bottom: 7rem;
     `,
   })}
 
@@ -35,28 +41,28 @@ Wrapper.Container = styled.div`
 
 `;
 
-const SectionTitle = styled.h1`
-  margin-bottom: 2rem;
-  color: ${({ theme }) => theme.colors.primary.colorTitle};
-  font-size: ${({ theme }) => theme.typographyVariants.title.fontSize};
+const SectionTitle = styled.h1`  
+  padding-bottom: 3rem;
+  color: ${({ theme }) => theme.titleColor};    
+  font-size: ${({ theme }) => theme.title.fontSize};
   ${breakpointsMedia({
     xs: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleXS.fontSize};    
+      font-size: ${({ theme }) => theme.titleXS.fontSize};    
     `,
-    sm: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleSM.fontSize};    
+    sm: css`      
+      font-size: ${({ theme }) => theme.titleSM.fontSize};    
     `,
     md: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleMD.fontSize};    
+      font-size: ${({ theme }) => theme.titleMD.fontSize};    
     `,
     lg: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleLG.fontSize};    
-      margin-bottom: 4rem;
+      padding-bottom: 5rem;  
+      font-size: ${({ theme }) => theme.titleLG.fontSize};      
     `,
     xl: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleXL.fontSize};    
+      font-size: ${({ theme }) => theme.titleXL.fontSize};    
     `,
-  })};        
+  })};
 `;
 
 const ProjetosWrapper = styled.div`

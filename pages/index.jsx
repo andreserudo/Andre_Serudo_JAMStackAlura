@@ -15,11 +15,15 @@ export default function Home() {
         flexDirection: 'column',
       }}
     >
-      <Capa />
-      <Cabecalho />
-      <Apresentacao />
-      <WrapperProjetos />
-      <SobreMim />
+      <header>
+        <Capa />
+        <Cabecalho />
+      </header>
+      <main>
+        <Apresentacao />
+        <WrapperProjetos />
+        <SobreMim />
+      </main>
       <Footer />
     </div>
   );

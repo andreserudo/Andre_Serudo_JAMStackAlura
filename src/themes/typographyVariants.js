@@ -11,17 +11,17 @@ export const typographyVariants = {
     lineHeight: 1.25, // 125%
   },
   titleSM: {
-    fontSize: '32px',
+    fontSize: '28px',
     fontWeight: '500',
     lineHeight: 1.25, // 125%
   },
   titleMD: {
-    fontSize: '32px',
+    fontSize: '28px',
     fontWeight: '500',
     lineHeight: 1.25, // 125%
   },
   titleLG: {
-    fontSize: '32px',
+    fontSize: '28px',
     fontWeight: '500',
     lineHeight: 1.25, // 125%
   },

@@ -6,7 +6,12 @@ function Social({ nome, src, link }) {
   return (
     <Wrapper>
       <a href={link} target="_blank" rel="noreferrer" hint={nome}>
-        <img src={src} alt={nome} />
+        <img
+          src={src}
+          alt={nome}
+          height="34px"
+          width="34px"
+        />
       </a>
     </Wrapper>
   );

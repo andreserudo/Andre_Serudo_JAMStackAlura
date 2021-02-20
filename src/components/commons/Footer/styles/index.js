@@ -2,13 +2,13 @@ import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 // import propToStyle from '../../../../themes/utils/propToStyle';
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled.footer`
   height: 100px;
   width: 100%;
   display: flex;  
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.primary.backgroundColor};
+  background-color: ${({ theme }) => theme.navBackgroundColor};
   
   ${breakpointsMedia({
     xs: css`
@@ -25,7 +25,7 @@ const FooterIconWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: ${({ theme }) => theme.colors.secondary.backgroundColor};
+  background-color: ${({ theme }) => theme.sectionBackgroundColor};
 
 `;
 

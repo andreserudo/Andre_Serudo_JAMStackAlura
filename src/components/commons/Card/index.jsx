@@ -8,7 +8,7 @@ function Card({ project }) {
     <CardWrapper>
       <CardWrapper.CardImage
         src={project.imagem}
-        alt={project.titulo}
+        alt=""
       />
       <CardWrapper.CardTextsWrapper>
         <CardWrapper.CardTitle>{project.titulo}</CardWrapper.CardTitle>

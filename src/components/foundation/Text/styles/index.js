@@ -3,7 +3,9 @@ import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 
 const TextBase = styled.span`
   width: 100%;
-  font-size: ${({ theme }) => theme.typographyVariants.smallestException.fontSize};
+  font-size: 14px;  
+  color: ${({ theme }) => theme.paragraphyColor};
+  /*
   ${breakpointsMedia({
     sm: css`      
       font-size: ${({ theme }) => theme.typographyVariants.paragraph2.fontSize};
@@ -11,7 +13,7 @@ const TextBase = styled.span`
     md: css`      
       font-size: ${({ theme }) => theme.typographyVariants.paragraph1.fontSize};
     `,
-  })}   
+  })}   */
 `;
 
 export default TextBase;

@@ -1,13 +1,16 @@
 import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 6rem;
+  justify-content: center;  
+  background-color: ${({ theme }) => theme.mainBackgroundColor};
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
   ${breakpointsMedia({
     xs: css`
       align-items: center;
@@ -15,29 +18,31 @@ const Wrapper = styled.div`
     md: css`
       padding-right: unset;
       padding-left: unset;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
     `,
   })}      
 
   h1 {
     margin-bottom: 2rem;
-  color: ${({ theme }) => theme.colors.primary.colorTitle};
-  font-size: ${({ theme }) => theme.typographyVariants.title.fontSize};
+  color: ${({ theme }) => theme.titleColor};
+  font-size: ${({ theme }) => theme.title.fontSize};
   ${breakpointsMedia({
     xs: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleXS.fontSize};    
+      font-size: ${({ theme }) => theme.titleXS.fontSize};    
     `,
     sm: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleSM.fontSize};    
+      font-size: ${({ theme }) => theme.titleSM.fontSize};    
     `,
     md: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleMD.fontSize};    
+      font-size: ${({ theme }) => theme.titleMD.fontSize};    
     `,
     lg: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleLG.fontSize};    
+      font-size: ${({ theme }) => theme.titleLG.fontSize};    
       margin-bottom: 4rem;
     `,
     xl: css`
-      font-size: ${({ theme }) => theme.typographyVariants.titleXL.fontSize};    
+      font-size: ${({ theme }) => theme.titleXL.fontSize};    
     `,
   })};        
   }
@@ -56,7 +61,7 @@ Wrapper.Card = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFF8E6;
+  background-color: ${({ theme }) => theme.sectionBackgroundColor};
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;  
   ${breakpointsMedia({
@@ -72,6 +77,9 @@ Wrapper.Card = styled.div`
       flex-direction: row;
     `,
     lg: css`    
+      width: 70%;
+    `,
+    xl: css`    
       width: 50%;
     `,
   })}      
@@ -92,8 +100,12 @@ Wrapper.Profile = styled.div`
       height: 333px;
     `,
     md: css`
-      width: 50%;
-      height: 100%;
+      width: 50%;      
+      height: 458px;
+    `,
+    lg: css`
+      width: 50%;      
+      height: 333px;
     `,
   })}      
 
@@ -104,24 +116,26 @@ Wrapper.Description = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;  
-  padding: .5rem .3rem ;
+  padding: .5rem .3rem ;  
+  text-align: justify;
 
   ${breakpointsMedia({
     xs: css`      
-      padding: 1rem .5rem 1rem .5rem;
+      padding: 1rem 2rem 1rem 2rem;
     `,
     md: css`
       width: 50%;
     `,
   })}      
 
-  h4 {
+  h2 {
+    font-size: 18px;
     margin-top: 1.5rem;
     margin-bottom: .5rem;
-    color: ${({ theme }) => theme.colors.primary.colorTitle};    
+    color: ${({ theme }) => theme.titleColor};    
   }
 
-  h4:first-of-type{
+  h2:first-of-type{
     margin-top:1rem;
   }
 `;

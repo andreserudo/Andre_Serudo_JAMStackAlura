@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import LanguageContext from '../../../context/LanguageContext';
 
 import ApresentacaoWrapper from './styles';
 
@@ -9,12 +10,15 @@ const info = {
 };
 
 function Apresentacao() {
+  const pageLanguage = useContext(LanguageContext);
+  const { contentPage } = pageLanguage;
+
   return (
     <ApresentacaoWrapper id="#me">
       <ApresentacaoWrapper.Nome>{info.nome}</ApresentacaoWrapper.Nome>
       <ApresentacaoWrapper.SobreNome>{info.sobreNome}</ApresentacaoWrapper.SobreNome>
       <ApresentacaoWrapper.QuebraLinha />
-      <ApresentacaoWrapper.Profissao>{info.profissao}</ApresentacaoWrapper.Profissao>
+      <ApresentacaoWrapper.Profissao>{contentPage[0].carreer}</ApresentacaoWrapper.Profissao>
     </ApresentacaoWrapper>
   );
 }
