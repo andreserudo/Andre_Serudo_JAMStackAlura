@@ -11,7 +11,8 @@ const CardWrapper = styled.div`
   justify-content: flex-start;  
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background-color: ${({ theme }) => theme.mainBackgroundColor};   
+  background-color: ${({ theme }) => theme.mainBackgroundColor};     
+  transition: box-shadow 1s ease-in-out;
 
   ${breakpointsMedia({
     xs: css`width: 90%;`,
@@ -42,6 +43,7 @@ const CardWrapper = styled.div`
     box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);    
+    transition: box-shadow 1s;
   }
 `;
 
@@ -94,16 +96,19 @@ CardWrapper.CardDescription = styled.div`
 `;
 
 CardWrapper.CardLink = styled.a`
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: ${({ theme }) => theme.paragraphyColor};   
   border-radius: 4px;
   font-weight: bold;
   text-decoration: none;
   padding: .25rem 1rem .25rem 1rem;
   margin-bottom: 1rem;
+  transition: color 1.5s ease-in-out;
+  transition: background-color 1s ease-in-out;
 
-  &:hover {    
+  &:hover {        
     background-color: ${({ theme }) => theme.linkHoverColor};   
+    transition: background-color 1s;
   }
 `;
 

@@ -104,8 +104,7 @@ Wrapper.Profile = styled.div`
       height: 458px;
     `,
     lg: css`
-      width: 50%;      
-      height: 333px;
+      width: 50%;            
     `,
   })}      
 

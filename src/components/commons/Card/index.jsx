@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import CardWrapper from './styles';
+import LanguageContext from '../../../context/LanguageContext';
 
 function Card({ project }) {
+  const pageLanguage = useContext(LanguageContext);
+  const { contentPage } = pageLanguage;
+
   return (
 
     <CardWrapper>
@@ -20,7 +24,7 @@ function Card({ project }) {
         href={project.link}
         target="_blank"
       >
-        Repository
+        {contentPage[0].projectLink}
       </CardWrapper.CardLink>
     </CardWrapper>
 

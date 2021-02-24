@@ -79,8 +79,16 @@ ApresentacaoWrapper.SobreNome = styled.h2`
 
 ApresentacaoWrapper.QuebraLinha = styled.hr`
   width: 60%;
-  color: ${({ theme }) => theme.titleColor};
-  
+//  color: ${({ theme }) => theme.titleColor};
+  padding: 0;
+border: none;
+height: 1px;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+color: #333;
+text-align: center;  
 `;
 
 ApresentacaoWrapper.Profissao = styled.h3`

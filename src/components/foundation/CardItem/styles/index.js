@@ -14,7 +14,7 @@ const Card = styled.span`
       font-size: ${({ theme }) => theme.paragraph2.fontSize};
     `,
     md: css`      
-      font-size: ${({ theme }) => theme.paragraph1.fontSize};
+      font-size: 14px;
     `,
   })}   
   /*

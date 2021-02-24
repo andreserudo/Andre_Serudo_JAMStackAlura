@@ -3,6 +3,7 @@ import Text from '../../foundation/Text';
 import Wrapper from './styles';
 import Card from '../../foundation/CardItem/styles';
 import LanguageContext from '../../../context/LanguageContext';
+import MailContact from '../../foundation/MailContact';
 
 function SobreMim() {
   const pageLanguage = useContext(LanguageContext);
@@ -16,6 +17,9 @@ function SobreMim() {
           <Wrapper.Profile />
           <Wrapper.Description>
             <Text>{contentPage[0].bio}</Text>
+            <br />
+            <Text>{contentPage[0].objective}</Text>
+            <MailContact />
             <h2>{contentPage[0].bioTitles[0]}</h2>
             <Wrapper.Cards>
               {

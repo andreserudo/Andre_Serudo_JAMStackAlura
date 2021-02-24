@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
 const IdiomaWrapper = styled.div`
-  display: flex;
+  display: flex;  
   padding-top: .5rem;
   padding-right: .5rem;
 
   button {
-    height: 18px;
-    
+    height: 18px;    
+    display: flex;
     cursor: pointer;
+    background: none;
+    border: none;
     img {
       height: 100%;
     }

@@ -7,6 +7,12 @@ const Wrapper = styled.div`
     width: 34px;
   }
 
+  img:hover {
+    height: 40px;
+    width: 40px;
+    transition: .5s ease-in-out;
+  }
+
   &:first-of-type {
     margin-right: unset;
     margin-bottom: 18px;
