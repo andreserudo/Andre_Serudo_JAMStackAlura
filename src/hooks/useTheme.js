@@ -5,7 +5,6 @@ function useTheme() {
 
   const handleChangeTheme = async (theme) => {
     await setCurrentTheme(theme);
-    console.log(currentTheme);
   };
 
   return [

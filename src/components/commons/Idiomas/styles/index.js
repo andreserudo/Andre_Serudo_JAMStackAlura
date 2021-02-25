@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components';
-import breakpointsMedia from '../../../../themes/utils/breakpointsMedia';
+import styled from 'styled-components';
 
 const IdiomasWrapper = styled.div`
   display: flex;
