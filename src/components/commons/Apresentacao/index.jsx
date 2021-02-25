@@ -3,7 +3,7 @@ import LanguageContext from '../../../context/LanguageContext';
 
 import ApresentacaoWrapper from './styles';
 
-const info = {
+let info = {
   nome: 'ANDRÉ',
   sobreNome: 'SERUDO',
   profissao: 'Software Engineer',
