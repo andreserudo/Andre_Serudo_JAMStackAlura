@@ -9,8 +9,6 @@ const info = {
   profissao: 'Software Engineer',
 };
 
-let newVar;
-
 function Apresentacao() {
   const pageLanguage = useContext(LanguageContext);
   const { contentPage } = pageLanguage;
