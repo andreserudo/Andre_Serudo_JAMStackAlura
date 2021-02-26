@@ -4,6 +4,8 @@ import Wrapper from './styles';
 import Card from '../../foundation/CardItem/styles';
 import LanguageContext from '../../../context/LanguageContext';
 import MailContact from '../../foundation/MailContact';
+import Modal from '../Modal';
+import Button from '../../foundation/Button';
 
 function SobreMim() {
   const pageLanguage = useContext(LanguageContext);
@@ -38,6 +40,7 @@ function SobreMim() {
             </Wrapper.Cards>
           </Wrapper.Description>
         </Wrapper.Card>
+        <Button>Clique aqui!</Button>
       </Wrapper.Container>
     </Wrapper>
   );
