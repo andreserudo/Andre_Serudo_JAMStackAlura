@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
@@ -22,10 +22,6 @@ export default function App({ Component, pageProps }) {
       ...colorPallet.filter((item) => item.theme === currentTheme)[0],
     },
   );
-
-  useEffect(() => {
-    console.log('oi');
-  }, [currentTheme]);
 
   return (
     <>

@@ -1,18 +1,47 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Text from '../../foundation/Text';
 import Wrapper from './styles';
 import Card from '../../foundation/CardItem/styles';
 import LanguageContext from '../../../context/LanguageContext';
 import MailContact from '../../foundation/MailContact';
-import Modal from '../Modal';
 import Button from '../../foundation/Button';
+import Modal from '../Modal';
+import Box from '../../foundation/Box';
+import FormContato from '../FormContato';
 
 function SobreMim() {
   const pageLanguage = useContext(LanguageContext);
   const { contentPage } = pageLanguage;
+  const [isItModalOpen, setModalOpen] = useState(false);
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <Wrapper>
+      <Modal
+        isOpen={isItModalOpen}
+        onClose={() => handleCloseModal()}
+      >
+        {(propsDoModal) => (
+          <Box
+            backgroundColor="white"
+            display="flex"
+            height="50vh"
+            width="50%"
+            alignItems="center"
+            position="relative"
+            left="25%"
+            top="25%"
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            {...propsDoModal}
+          >
+            <FormContato onCloseButton={handleCloseModal} />
+          </Box>
+        )}
+      </Modal>
+
       <Wrapper.Container>
         <h1>{contentPage[0].titles[1]}</h1>
         <Wrapper.Card id="AboutMe">
@@ -40,7 +69,16 @@ function SobreMim() {
             </Wrapper.Cards>
           </Wrapper.Description>
         </Wrapper.Card>
-        <Button>Clique aqui!</Button>
+
+        <Button
+          onClick={() => {
+            // isModalOpen = true;
+            console.log('isModalOpen', isItModalOpen);
+            setModalOpen(!isItModalOpen); // novo state sendo atribuido
+          }}
+        >
+          Clique aqui!
+        </Button>
       </Wrapper.Container>
     </Wrapper>
   );
