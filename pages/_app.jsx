@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
@@ -7,15 +7,14 @@ import { typographyVariants } from '../src/themes/typographyVariants';
 import GlobalStyle from '../src/themes/GlobalStyle';
 import Provider from '../src/context/Provider';
 import useTheme from '../src/hooks/useTheme';
-import LanguageContext from '../src/context/LanguageContext';
 
 export default function App({ Component, pageProps }) {
   // const valor = useContext(LanguageContext);
   /// const [themeContent, setThemeContent] = useState({});
   // console.log('theme: ', pageTheme);
-  const [currentTheme, handleChangeTheme] = useTheme();
-  const valor = useContext(LanguageContext);
-  console.log(currentTheme);
+  const [currentTheme] = useTheme();
+
+  // eslint-disable-next-line no-unused-vars
   const [pageTheme, setPageTheme] = useState(
     {
       ...typographyVariants,
@@ -24,10 +23,6 @@ export default function App({ Component, pageProps }) {
     },
   );
 
-  useEffect(() => {
-    console.log('oi');
-  }, [currentTheme]);
-  console.log(currentTheme);
   return (
     <>
       <Head>
